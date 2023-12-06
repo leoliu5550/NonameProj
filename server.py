@@ -16,7 +16,7 @@ class Item(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"service":"floyd-Warshall algorithm "}
+    return "readme.md"
 @app.post("/create_map/")
 async def create_item(item: Item):
     # item = item.dict()
