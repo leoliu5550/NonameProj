@@ -13,6 +13,10 @@ class Item(BaseModel):
     name: str
     map_item: Dict
 
+
+@app.get("/")
+async def root():
+    return {"service":"floyd-Warshall algorithm "}
 @app.post("/create_map/")
 async def create_item(item: Item):
     # item = item.dict()
