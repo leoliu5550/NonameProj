@@ -44,7 +44,7 @@ def pathfindalg(network):
                     path_mat[i][j].pop()
                     path_mat[i][j].extend(path_mat[k][j])
                     
-    return {'path': path_mat, 'length': dis_mat}
+    return {'path': path_mat, 'cost': dis_mat}
 
 
 def trans_strmap(network):

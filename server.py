@@ -25,7 +25,7 @@ async def create_item(item: Item):
     shortpath = pathfindalg(substitute_network)
     
     shortpath_result = {
-        "mapp":shortpath,
+        "map":shortpath,
         "reversed_mapping":reversed_mapping,
         "mapping":mapping
     }

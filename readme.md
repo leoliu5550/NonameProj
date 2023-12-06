@@ -15,12 +15,17 @@
   }
 }
 ```
+# Example Map
 
+``` mermaid
+graph LR;
+    node0--1-->node1--1-->node2--1-->node3;
+```
 # Response
 ```JSON
 
 {
-  "mapp": {
+  "map": {
     "path": [
       [
         [0],
@@ -47,7 +52,7 @@
         [3]
       ]
     ],
-    "length": [
+    "cost": [
       [0,1,2,3],
       [1,0,1,2],
       [2,1,0,1],
@@ -69,9 +74,10 @@
 }
 
 ```
-# Example Map
 
-``` mermaid
-graph LR;
-    node0--1-->node1--1-->node2--1-->node3;
-```
+# result
+from node1 to node3, 
+- path: [1,2,3] 
+- means: node1 -> node2 -> node3 
+- cost: 3
+
