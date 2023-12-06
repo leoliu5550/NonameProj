@@ -25,10 +25,10 @@ async def create_item(item: Item):
         "reversed_mapping":reversed_mapping,
         "mapping":mapping
     }
-    with open(f"mapsazing/{item.name}.pkl","wb") as file:
-        pk.dump(shortpath_result,file)
-    print()
-    return shortpath,mapping
+    # with open(f"mapsazing/{item.name}.pkl","wb") as file:
+    #     pk.dump(shortpath_result,file)
+    # print()
+    return shortpath_result
 # {
 #     "A": {"B": 1},
 #     "B": { "A": 1,"C": 1},
