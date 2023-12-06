@@ -70,10 +70,8 @@
 
 ```
 # Example Map
-```mermid
-    graph TD
-        A-->B
-        A-->C
-        B-->D
-        C-->D
+
+``` mermaid
+graph LR;
+    node0--1-->node1--1-->node2--1-->node3;
 ```
